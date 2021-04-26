@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
-import { Infosec, Container, InfoSecRow, LeftsideBar, LeftsideBarHeader, LeftsideBarTitle, LeftsideBarItems, LeftsideBarLink, Events, RowTitle, Form, FormInput, Delivery, SubTitle, InfoSecBody, InfoColumn, ImgWrapper, Img, ImgTitle, Price  } from '../InfoSection/InfosectionStyle';
+import { Infosec, Container, InfoSecRow, LeftsideBar, LeftsideBarHeader, LeftsideBarTitle, LeftsideBarItems, LeftsideBarLink, RightSide, Events, RowTitle, Form, FormInput, Delivery, SubTitle, InfoSecBody, InfoColumn, ImgWrapper, Img, ImgTitle, Price  } from '../InfoSection/InfosectionStyle';
 
 export default function Home() {
   return (
@@ -11,29 +11,40 @@ export default function Home() {
         <Container>
           <InfoSecRow>
             <LeftsideBar>
-              <LeftsideBarHeader>Categories</LeftsideBarHeader>
-              <LeftsideBarTitle></LeftsideBarTitle>
+              <RowTitle>Categories</RowTitle>
+              <LeftsideBarTitle>Popcorn Machine</LeftsideBarTitle>
               <LeftsideBarItems>
-                <LeftsideBarLink></LeftsideBarLink>
+                <LeftsideBarLink borderTop='1px solid RGB(252, 115, 3)'>Snow Cone Machine</LeftsideBarLink>
+              </LeftsideBarItems>
+              <LeftsideBarItems>
+                <LeftsideBarLink>Fairy Floss Machine</LeftsideBarLink>
+              </LeftsideBarItems>
+              <LeftsideBarItems>
+                <LeftsideBarLink>Slushie Cocktail Machine</LeftsideBarLink>
+              </LeftsideBarItems>
+              <LeftsideBarItems>
+                <LeftsideBarLink>Hot Dog Steamer</LeftsideBarLink>
               </LeftsideBarItems>
             </LeftsideBar>
-            <Events>
-              <RowTitle>Event date</RowTitle>
-              <Form>
-                <FormInput name='event' type='text' placeholder='select event date' />
-                
-              </Form>
-            </Events>
-            <Delivery>
-              <RowTitle>Delivery</RowTitle>
-              <Form>
-                <FormInput name='delivery' type='text' placeholder='Enter in postcode' />
+            <RightSide>
+              <Events>
+                <RowTitle>Event date</RowTitle>
+                <Form>
+                  <FormInput name='events' type='text' placeholder='select event date' />
+                  
+                </Form>
+              </Events>
+              <Delivery>
+                <RowTitle>Delivery</RowTitle>
+                <Form>
+                  <FormInput name='delivery' type='text' placeholder='Enter in postcode' />
 
-              </Form>
-            </Delivery>
+                </Form>
+              </Delivery>
+            </RightSide>
           </InfoSecRow>
-          <SubTitle></SubTitle>
-          <InfoSecBody></InfoSecBody>
+          <InfoSecBody>
+          <SubTitle>Fun Foods</SubTitle>
           <InfoColumn>
             <ImgWrapper>
               <Img  alt='' />
@@ -41,6 +52,7 @@ export default function Home() {
               <Price></Price>
             </ImgWrapper>
           </InfoColumn>
+          </InfoSecBody>
         </Container>
       </Infosec>
       <Footer />

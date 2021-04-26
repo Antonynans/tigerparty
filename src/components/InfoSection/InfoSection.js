@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Infosec, Container, InfoSecRow, LeftsideBar, LeftsideBarHeader, LeftsideBarTitle, LeftsideBarItems, LeftsideBarLink, Events, RowTitle, Form, FormInput, Delivery, SubTitle, InfoSecBody, InfoColumn, ImgWrapper, Img, ImgTitle, Price  } from './InfosectionStyle';
 
 export default function InfoSection({ img, alt }) {
