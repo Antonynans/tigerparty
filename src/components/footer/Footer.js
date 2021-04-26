@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
     return (
+      <>
         <FooterContainer>
           <TopFooter>
             <FooterSubHeading>
@@ -73,5 +74,6 @@ export default function Footer() {
             </WebsiteRights>
           </BottomFooter>
         </FooterContainer>
+      </>
     )
 }

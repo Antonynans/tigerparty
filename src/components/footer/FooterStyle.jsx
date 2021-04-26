@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const TopFooter = styled.div`
-    background-color: orange;
+    background-color: RGB(252, 115, 3);
     height: 150px;
     width: 100%;
     text-align: center;
@@ -20,12 +20,12 @@ export const FooterSubHeading = styled.h3`
 `;
 
 export const Newsletter = styled.div`
-    // width: 50%;
+    width: 100%;
 `;
 
 export const FormInput = styled.input`
-    // height: 40px;
-    // width: 60px;
+    height: 50px;
+    width: 50%;
     border-radius: 6px;
     border: none;
 `;
@@ -38,7 +38,7 @@ export const Form = styled.form`
 export const Button = styled.button`
     color: #fff;
     background-color: black;
-    height: 40px;
+    height: 50px;
     border-radius: 6px;
     width: 110px;
     font-size: x-small;
@@ -75,7 +75,7 @@ export const FooterLinksItem = styled.div`
 `;
 
 export const FooterLinksTitle = styled.p`
-    color: orange;
+    color: RGB(252, 115, 3);
     font-size: 18px;
 `;
 
