@@ -1,13 +1,16 @@
 import React, { useContext } from 'react';
 import ProductItem from './ProductItem';
 import { ProductsContext } from '../../contexts/ProductsContext';
+import { GridStyle } from '../InfoSection/InfosectionStyle';
 
 const ProductsGrid = () => {
+
+    
 
     const { products} = useContext(ProductsContext)
 
     return ( 
-        <div style={{display:'grid', gridGap:'15px', }}>
+        <GridStyle>
             <div className="row">
                 <div className="col-sm-8">
                     <div className="py-3">
@@ -32,7 +35,7 @@ const ProductsGrid = () => {
             <div>
 
             </div>
-        </div>
+        </GridStyle>
      );
 }
  

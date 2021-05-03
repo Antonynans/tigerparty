@@ -381,3 +381,10 @@ export const CartImg = styled.img`
   max-height: 150px;
   /* border-radius: 6%; */
 `;
+
+export const GridStyle = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-gap: 15px;
+  /* margin-top: 10%; */
+`;
