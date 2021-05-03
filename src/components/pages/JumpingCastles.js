@@ -36,31 +36,31 @@ export default function JumpingCastles() {
             <LeftsideBar>
               <LeftsideBarTitle>Medium Bouncy jumping Castles</LeftsideBarTitle>
               <LeftsideBarItems>
-                <LeftsideBarLink borderTop='1px solid RGB(252, 115, 3)' to='/'><LeftsideBarLinkWrapper>Snow Cone Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink borderTop='1px solid RGB(252, 115, 3)' to='##'><LeftsideBarLinkWrapper>Snow Cone Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Large Combo Jumping Castles</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Large Combo Jumping Castles</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Obstacle Courses</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Obstacle Courses</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Water Slides</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Water Slides</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Inflatable Dry Slides</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Inflatable Dry Slides</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Adults Jumping Castles</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Adults Jumping Castles</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Interactive Games</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Interactive Games</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Inflatable Sports Games</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Inflatable Sports Games</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Inflatable Carnival Games</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Inflatable Carnival Games</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
             </LeftsideBar>
           <InfoSecBody>

@@ -9,6 +9,7 @@ import PartyHire from './components/pages/PartyHire';
 import Cart from './components/cart';
 import ViewItem from './components/cart/ViewItem'
 import Store from './components/store';
+import Homepage from './components/pages/Homepage';
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
           <Route path='/faq' component={Faq} />
           <Route path='/contact' component={Contact} />
           <Route path='/view' component={ViewItem} />
-
           <Route path='/cart' component={Cart} />
-          <Route exact path="/" component={Store}/>
+          <Route exact path="/store" component={Store}/>
+          <Route path='/' component={Homepage} />
 
           {/* <Footer /> */}
         </Switch>
