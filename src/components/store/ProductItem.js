@@ -14,24 +14,26 @@ const ProductItem = ({product}) => {
     }
 
     return ( 
-        <div>
+        <div className="card card-body">
             <img style={{display: "block", margin: "0 auto 10px", maxHeight: "200px"}} 
             src={product.photo + '?v=' + product.id} alt=""/>
             <p>{product.name}</p>
             <h3>{formatNumber(product.price)}</h3>
             <div>
-                <Link  to="/">Details</Link>
+                <Link  to="/" className="btn btn-link btn-sm mr-2">Details</Link>
 
                 {
                     isInCart(product) && 
                     <button 
-                    onClick={() => increase(product)}>Add more</button>
+                    onClick={() => increase(product)}
+                    className="btn btn-outline-primary btn-sm">Add more</button>
                 }
 
                 {
                     !isInCart(product) && 
                     <button 
-                    onClick={() => addProduct(product)}>Add to cart</button>
+                    onClick={() => addProduct(product)}
+                    className="btn btn-primary btn-sm">Add to cart</button>
                 }
                 
             </div>

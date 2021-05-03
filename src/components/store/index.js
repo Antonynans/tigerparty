@@ -9,7 +9,7 @@ const Store = () => {
         <div title="Store" description="This is the Store page" >
             <Navbar />
             <div style={{width:'50%'}} >
-                <div>
+                <div className="text-center mt-5">
                     <h1>Store</h1>
                     <p>This is the Store Page.</p>
                 </div>

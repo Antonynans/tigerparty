@@ -46,16 +46,16 @@ export default function FunFoods({ children }) {
           <LeftsideBar>
               <LeftsideBarTitle>Popcorn Machine</LeftsideBarTitle>
               <LeftsideBarItems>
-                <LeftsideBarLink borderTop='1px solid RGB(252, 115, 3)' to='/'><LeftsideBarLinkWrapper>Snow Cone Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink borderTop='1px solid RGB(252, 115, 3)' to='##'><LeftsideBarLinkWrapper>Snow Cone Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Fairy Floss Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Fairy Floss Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Slushie Cocktail Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Slushie Cocktail Machine</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
               <LeftsideBarItems>
-                <LeftsideBarLink to='/'><LeftsideBarLinkWrapper>Hot Dog Steamer</LeftsideBarLinkWrapper></LeftsideBarLink>
+                <LeftsideBarLink to='##'><LeftsideBarLinkWrapper>Hot Dog Steamer</LeftsideBarLinkWrapper></LeftsideBarLink>
               </LeftsideBarItems>
             </LeftsideBar>
           <InfoSecBody>
