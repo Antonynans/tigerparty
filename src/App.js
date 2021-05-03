@@ -16,6 +16,8 @@ function App() {
     <BrowserRouter>
         <Switch>
           {/* <Navbar /> */}
+          <Route path='/' component={Store} />
+
           <Route path='/funfoods' component={FunFoods} />
           <Route path='/jumpingcastles' component={JumpingCastles} />
           <Route path='/partyhire' component={PartyHire} />
@@ -23,8 +25,7 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/view' component={ViewItem} />
           <Route path='/cart' component={Cart} />
-          <Route exact path="/store" component={Store}/>
-          <Route path='/' component={Homepage} />
+          {/* <Route exact path="/store" component={Store}/> */}
 
           {/* <Footer /> */}
         </Switch>

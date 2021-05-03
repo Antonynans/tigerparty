@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../footer/Footer';
 import Navbar from '../navbar/Navbar';
 
 import ProductsGrid from './ProductsGrid';
@@ -15,6 +16,7 @@ const Store = () => {
                 </div>
                 <ProductsGrid/>
             </div>
+            <Footer />
         </div>
      );
 }
