@@ -28,6 +28,7 @@ export const FormInput = styled.input`
     width: 50%;
     border-radius: 6px;
     border: none;
+    outline: none;
 `;
 
 export const Form = styled.form`

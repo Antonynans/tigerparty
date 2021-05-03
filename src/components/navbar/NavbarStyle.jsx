@@ -19,7 +19,10 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
     width: 100px;
-    padding: 20%;
+    /* padding: 0 20%; */
+    /* padding-left: 30%; */
+    margin-left: 30px;
+    height: 100%;
     // margin-right: 0.5rem;
 
 `;
@@ -27,7 +30,7 @@ export const NavIcon = styled.img`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 768px) {
         display: block; 
         position: absolute;
         top: 0;
@@ -43,11 +46,11 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    /* padding: 0; */
+    padding-right: 20px;
     overflow: hidden;
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -58,23 +61,28 @@ export const NavMenu = styled.ul`
         opacity: 1;
         transition: all 0.5s ease;
         background: #101522;
+        padding: 0;
+        margin: 0;
+
     }
 `;
 
 export const NavItem = styled.li`
     height: 80px;
     border-bottom: 2px solid transparent;
+    font-size: small;
 
     &:hover {
         color: RGB(252, 115, 3);
         // border-bottom: 2px solid RGB(252, 115, 3);
     }
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
 
         &:hover {
             border: none;
+        }
     }
 `;
 
@@ -85,9 +93,10 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    justify-content: center;
 
-    @media screen and (max-height: 765px) {
-        // text-align: center;
+    @media screen and (max-height: 768px) {
+        /* text-align: center; */
         padding: 2rem;
         width: 100%;
         display: table;
@@ -97,4 +106,15 @@ export const NavLink = styled(Link)`
             transition: all 0.3s ease;
         }
 }
+`;
+
+export const ItemIcon = styled.img`
+    width: 50px;
+    margin-top: -10%;
+    height: 40px;
+    
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+    }
 `;
