@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
 export const NavbarContainer = styled.div`
-    background-color: black;
+  background-color: ${({bcolor})=>bcolor?bcolor: 'black'};
     display: flex;
     justify-content: space-between;
     height: 80px;

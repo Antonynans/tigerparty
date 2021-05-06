@@ -5,7 +5,6 @@ import logo from '../../images/logo.png';
 import { formatNumber } from '../../helpers/utils';
 import { ProductsContext } from '../../contexts/ProductsContext';
 
-// const { product } = useContext(ProductsContext)
 
 const Modal = ({ isShowing, hide, product }) => isShowing ? ReactDOM.createPortal(
 
@@ -18,6 +17,7 @@ const Modal = ({ isShowing, hide, product }) => isShowing ? ReactDOM.createPorta
             <span aria-hidden="true">&times;</span>
             </button> 
         </div>
+        
         <div className="modal-container">
           <div className="img-container">
             <img src={product.photo} alt='img' />
