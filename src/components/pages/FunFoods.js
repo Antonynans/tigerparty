@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 import { Infosec, Container, InfoSecRow, InfoContainer, LeftsideBar, LeftsideBarHeader, LeftsideBarTitle, LeftsideBarItems, LeftsideBarLink, RightSide, Events, RowTitle, Form, FormInput, Delivery, SubTitle, InfoSecBody, TextWrapper, InfoColumn, ImgWrapper, Img, ImgTitle, Price, LeftsideBarLinkWrapper, FormImg  } from '../InfoSection/InfosectionStyle';
@@ -8,11 +8,13 @@ import delivery from '../../images/logo/Delivery-01.svg';
 import Modal from '../marqueeModal/MarqueeModal';
 import useModal from '../marqueeModal/useModal';
 import { formatNumber } from '../../helpers/utils';
+import { ProductsContext } from '../../contexts/ProductsContext';
 
-export const FunFoodsContext = createContext();
+// export const FunFoodsContext = createContext();
 
 export default function FunFoods({ children }) {
   const {isShowing, toggle} = useModal();
+  const {product} = useContext(ProductsContext)
 
   return (
     <>

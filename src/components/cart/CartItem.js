@@ -33,7 +33,7 @@ const CartItem = ({product}) => {
             <div >
             <QtyDiv >
             <Qty style={{display:'flex'}}>Quantity: <h4>{product.quantity}</h4></Qty>
-            <CartButton type='button' onClick={removeProduct} color='grey' border='1px solid grey'><BsTrash />Remove Item</CartButton>
+            <CartButton type='button' onClick={() => removeProduct(product)} color='grey' border='1px solid grey'><BsTrash />Remove Item</CartButton>
             </QtyDiv>
             </div>
             <hr />

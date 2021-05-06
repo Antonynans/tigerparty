@@ -148,8 +148,8 @@ export const ImgRow = styled.div`
 
 export const ImgWrapper = styled.div`
   /* padding-top: 5px; */
-  width: 30%;
-  height: 16rem;
+  width: ${({width})=>width?width: '30%'};
+  height: ${({height})=>height?height: '16rem'};
   border: 2px solid gainsboro;
   border-radius: 12px;
   display: flex;
@@ -158,7 +158,7 @@ export const ImgWrapper = styled.div`
   /* margin-bottom: 4%; */
   
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 50%;
     /* height: 20rem; */
     margin-bottom: 4%;
   }
@@ -167,7 +167,7 @@ export const ImgWrapper = styled.div`
 
 export const Img = styled.img`
   /* width: 300px; */
-  height: 200px;
+  height: ${({height})=>height?height: '200px'};
   border-radius: 12px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -388,3 +388,58 @@ export const GridStyle = styled.div`
   grid-gap: 15px;
   /* margin-top: 10%; */
 `;
+
+export const HomeBackgroungImg = styled.img`
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 0;
+`;
+
+export const HomepageTitleDiv = styled.div`
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin-top: 30vh;
+  /* vertical-align: middle; */
+  /* justify-content: center; */
+`;
+
+export const HomepageImgDiv = styled.div`
+  width: ${({width})=>width?width: '130px'};
+  height: ${({height})=>height?height: '130px'};
+  margin: 15px 0 3px 0;
+  /* margin-bottom: 3px; */
+  border-radius: 10px;
+  border: 1px solid RGB(252, 115, 3);
+`;
+
+export const HomepageImg = styled.img`
+  height: ${({height})=>height?height: '100px'};
+  /* width: 110px; */
+`;
+
+export const HomepageP = styled.p`
+  font-size: small;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+`;
+
+export const HomepageDivContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-left: 3px;
+  /* margin: 0 auto 50px auto; */
+`;
+
+export const HomeDiv = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.8;
+  background: rgba(0, 0,0, 1) linear-gradient(to bottom, rgba(0,0,0,0) 0px,rgba(0,0,0,1) 100%) repeat 0 0;
+`;
+

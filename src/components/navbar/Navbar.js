@@ -8,7 +8,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -34,6 +34,40 @@ export default function Navbar() {
     return (
         <>
         <IconContext.Provider value={{ color: '#fff' }}>
+        {
+          window.location.pathname === "/" ?
+          <NavbarContainer bcolor='transparent'>
+          <NavLogo to='/' onClick={closeMobileMenu}>
+            <NavIcon src={tiger} alt='tigerLogo' />
+          </NavLogo>
+          <MobileIcon onClick={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}    
+          </MobileIcon> 
+          <NavMenu onClick={handleClick} click={click}>
+            <NavItem>
+              <NavLink to='/jumpingcastles' onClick={closeMobileMenu}>Jumping Castles</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to='/funfoods' onClick={closeMobileMenu}>Fun Foods</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to='/partyhire' onClick={closeMobileMenu}>Party Hire</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to='/faq' onClick={closeMobileMenu}>FAQ</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to='/contact' onClick={closeMobileMenu}>Contact</NavLink>
+            </NavItem>
+            <NavItem style={{display:'none'}}>
+              <NavLink to='/' onClick={closeMobileMenu}><ItemIcon src={search} alt='search'/></NavLink>
+            </NavItem>
+            <NavItem style={{display:'none'}}>
+              <NavLink to='/cart' onClick={closeMobileMenu}><ItemIcon src={cart} alt='cart'/>({itemCount})</NavLink>
+            </NavItem>
+          </NavMenu>
+        </NavbarContainer> :
+
         <NavbarContainer>
           <NavLogo to='/' onClick={closeMobileMenu}>
             <NavIcon src={tiger} alt='tigerLogo' />
@@ -58,15 +92,14 @@ export default function Navbar() {
               <NavLink to='/contact' onClick={closeMobileMenu}>Contact</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/' onClick={closeMobileMenu}><ItemIcon src={search} alt='search'/></NavLink>
+              <NavLink to='##' onClick={closeMobileMenu}><ItemIcon src={search} alt='search'/></NavLink>
             </NavItem>
             <NavItem>
               <NavLink to='/cart' onClick={closeMobileMenu}><ItemIcon src={cart} alt='cart'/>({itemCount})</NavLink>
             </NavItem>
-          </NavMenu>
-        
-            
+          </NavMenu>        
         </NavbarContainer>
+        }
         </IconContext.Provider>
         </>
     )

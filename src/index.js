@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import 'normalize.css'; 
-import 'bootswatch/dist/lux/bootstrap.css';
+// import 'bootswatch/dist/lux/bootstrap.css';
 
 import ProductsContextProvider from './contexts/ProductsContext';
 import CartContextProvider from './contexts/CartContext';
